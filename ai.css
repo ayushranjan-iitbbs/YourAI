@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav .nav-item {
+  margin-right: 15px;
+  padding:4px;
+}
+ 
+.line {
+  text-align: center;
+  font-size: 30px;
+  padding: 40px;
+  height: 160px;
+}
+.nav-link{
+    border: 1px transparent black;
+    border-radius: 1px;
+    transition: 0.3s ease;
+}
+.nav-link:hover{
+    border: 1px solid black;
+    border-radius: 1px;
+}
+#domain{
+    border:none;
+}
+#gpt{
+    border:solid 2px #D4AF37;
+    border-radius: 5px;
+}
+.btn{
+    margin-left:4px;
+}
+ .row{
+    display: flex;
+     
+ }
+.card{
+    display: flex;
+    margin-top:60px;
+     margin-left:29px;
+    padding:20px;
+    height:380px;
+    cursor: pointer;
+   border-radius:7%;
+ 
+}
+
+.card:hover{
+    cursor: pointer;
+transform: translateY(-10px);
+border:0.002em solid black;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer{
+    height:2rem;
+    padding:25px;
+    text-align: center;
+    background-color: rgb(64, 154, 124);
+    color: aliceblue;
+}
+ 
+
+ 
