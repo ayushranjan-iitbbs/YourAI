@@ -1,68 +1,96 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
-}
-.navbar-nav .nav-item {
-  margin-right: 15px;
-  padding:4px;
-}
- 
-.line {
-  text-align: center;
-  font-size: 30px;
-  padding: 40px;
-  height: 160px;
-}
-.nav-link{
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+    padding: 4px;
+  }
+  
+  .line {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+    height: 160px;
+  }
+  
+  .nav-link {
     border: 1px transparent black;
     border-radius: 1px;
     transition: 0.3s ease;
-}
-.nav-link:hover{
+  }
+  
+  .nav-link:hover {
     border: 1px solid black;
     border-radius: 1px;
-}
-#domain{
-    border:none;
-}
-#gpt{
-    border:solid 2px #D4AF37;
+  }
+  
+  #domain {
+    border: none;
+  }
+  
+  #gpt {
+    border: solid 2px #d4af37;
     border-radius: 5px;
-}
-.btn{
-    margin-left:4px;
-}
- .row{
+  }
+  
+  .btn {
+    margin-left: 4px;
+  }
+  
+  .card-container {
     display: flex;
-     
- }
-.card{
-    display: flex;
-    margin-top:60px;
-     margin-left:29px;
-    padding:20px;
-    height:380px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 2rem;
+    margin: 40px auto;
+    max-width: 100%;
+    padding: 0 20px;
+
+  }
+  
+  .card {
+    width: 18rem;
+    margin: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 380px;
     cursor: pointer;
-   border-radius:7%;
- 
-}
-
-.card:hover{
+    border-radius: 7%;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
     cursor: pointer;
-transform: translateY(-10px);
-border:0.002em solid black;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-
-.footer{
-    height:2rem;
-    padding:25px;
-    text-align: center;
-    background-color: rgb(64, 154, 124);
-    color: aliceblue;
-}
- 
-
- 
+    transform: translateY(-10px);
+    border: 0.002em solid black;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  .footer{
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  background-color: rgb(64, 154, 124);
+  color: aliceblue;
+  box-sizing: border-box;
+  }
+  @media screen and (max-width: 991px) {
+    .navbar-collapse {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

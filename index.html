@@ -1,241 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="ai.css" />
-    <title>Your AI</title>
-    <style></style>
-  </head>
-  <body>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-           
-            <a class="navbar-brand" href="#"><b>Your AI</b></a>
-            <!-- Navbar Toggler for Mobile -->
-            
-            <!-- Navbar Content -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- ms-auto shifts links towards the search bar -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/YourGPT/yourgpt.html" id="gpt">YourGPT</a>
-                  </li>
-                    <li class="nav-item dropdown">
-                        <a id="domain"class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Domain
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="/Webdev/web.html">Web Development</a></li>
-                          <li><a class="dropdown-item" href="/Finance/finanace.html">Finance and Consulting</a></li>
-                          <li><a class="dropdown-item" href="/Marketing/marketing.html">Marketing & Sales Automation</a></li>
-                          <li><a class="dropdown-item" href="/contentcreation/content.html">Content Creation & Optimization</a></li>
-                          <li><a class="dropdown-item" href="#">Design & Creative Media</a></li>
-                          <li><a class="dropdown-item" href="#">Software Development & Programming</a></li>
-                          <li><a class="dropdown-item" href="#">Data & Workflow Automation</a></li>
-                          <li><a class="dropdown-item" href="#">Conversational AI & Chatbots</a></li>
-                           
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Other Domains to Explore</a></li>
-                        </ul>
-                    </li>
-                     
-                </ul>
-                <!-- Search Bar -->
-                <form class="d-flex ms-3" role="search"> <!-- ms-3 adds margin to the left of the search bar -->
-                    <input class="form-control me-2" type="search" placeholder="Search your domain.." aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
-                </form>
-                <button type="button" class="btn btn-success">Login</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="ai.css" />
+  <title>Your AI</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>Your AI</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/YourGPT/yourgpt.html" id="gpt">YourGPT</a></li>
+          <li class="nav-item dropdown">
+            <a id="domain" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Domain</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Webdev/web.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="/Finance/finanace.html">Finance and Consulting</a></li>
+              <li><a class="dropdown-item" href="/Marketing/marketing.html">Marketing & Sales Automation</a></li>
+              <li><a class="dropdown-item" href="/contentcreation/content.html">Content Creation & Optimization</a></li>
+              <li><a class="dropdown-item" href="#">Design & Creative Media</a></li>
+              <li><a class="dropdown-item" href="#">Software Development & Programming</a></li>
+              <li><a class="dropdown-item" href="#">Data & Workflow Automation</a></li>
+              <li><a class="dropdown-item" href="#">Conversational AI & Chatbots</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Other Domains to Explore</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex ms-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search your domain.." />
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-success">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="line">Search Anything You Need ......</div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+   
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://blog.routinehub.co/content/images/2023/02/openAI-chat-gpt-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ChatGPT</h5>
+              <p class="card-text">AI chatbot for generating human-like responses.</p>
+              <a href="https://www.jasper.ai/" class="btn btn-primary">Visit Now</a>
             </div>
+          </div>
         </div>
-    </nav>
-    <div class="line">Search Anything You Need ......</div>
-<div class="row">
+      
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://1000logos.net/wp-content/uploads/2022/12/HubSpot-Logo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hubspot</h5>
+              <p class="card-text">AI-driven marketing and sales platform for business growth.</p>
+              <a href="https://www.hubspot.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRjTJahdK4csBbd18k7cUdMwAK1t6F6qTxlw&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jasper AI</h5>
+              <p class="card-text">AI-powered content generation for marketing copy.</p>
+              <a href="https://www.jasper.ai/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8k64RPD_bkyBVASVZQZfVRn-NwBJHP5vSQ&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Synthesia</h5>
+              <p class="card-text">AI video generation platform for creating professional videos.</p>
+              <a href="https://www.synthesia.io/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static-web.grammarly.com/1e6ajr2k4140/59BCuroQxv6HsFY1t0LYx6/964f8dd29e89eb079a2737f7e7254c11/Frame_31613445.png?w=810" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Grammarly</h5>
+              <p class="card-text">AI-powered writing assistant for grammar and style enhancement.</p>
+              <a href="https://www.grammarly.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 6 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPKQWnMrsImxX7945sbQSenays5V_MCe6Qw&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">GitHub Copilot</h5>
+              <p class="card-text">AI pair programmer that assists with code completion.</p>
+              <a href="https://github.com/features/copilot" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 7 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://pbs.twimg.com/media/GFvOjq8W0AACVxI.jpg:large" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">DALL·E 3</h5>
+              <p class="card-text">AI system capable of generating realistic images from textual descriptions.</p>
+              <a href="https://openai.com/dall-e-3/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 8 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://i0.wp.com/dessign.net/wp-content/uploads/Meet-Magic-Studio-Canva-s-AI-Tools.png?resize=1024%2C593&ssl=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Canva Magic</h5>
+              <p class="card-text">AI-enhanced design tool for creating social media graphics.</p>
+              <a href="https://www.canva.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 9 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://mms-app.s3.amazonaws.com/wordpress/2021/06/15120226/marketmuse-share.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MarketMuse</h5>
+              <p class="card-text">AI-driven content research and optimization platform.</p>
+              <a href="https://www.marketmuse.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 10 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://miro.medium.com/v2/resize:fit:1200/1*k6wECwaAc1vfOQtQak9vfQ.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tabnine</h5>
+              <p class="card-text">AI code completion tool supporting multiple programming languages.</p>
+              <a href="https://www.tabnine.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 11 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://external-preview.redd.it/first-ai-powered-robot-lawyer-will-represent-defendant-in-v0-beutsWz9TaGKo1KhqeEhKM6biTFMZZGpqIQR6W_N83s.jpg?auto=webp&s=b184208e41276297d2ff480351372b6215b38c5b" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Legal Robot</h5>
+              <p class="card-text">AI tool for analyzing and interpreting legal documents.</p>
+              <a href="https://www.legalrobot.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 12 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://analyticsdrift.com/wp-content/uploads/2020/11/Deepnote-1-1024x576.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Deepnote</h5>
+              <p class="card-text">Collaborative data science notebook with AI capabilities.</p>
+              <a href="https://deepnote.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 13 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://appsumo2-cdn.appsumo.com/media/deals/images/as-web-BrowseAI_FsfV03u.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Browse AI</h5>
+              <p class="card-text">AI tool for automating data extraction from websites.</p>
+              <a href="https://www.browse.ai/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 14 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://i.ytimg.com/vi/U46MqPLHv6g/maxresdefault.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Crayon</h5>
+              <p class="card-text">Competitive intelligence tool utilizing AI for market analysis.</p>
+              <a href="https://www.crayon.co/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 15 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://i0.wp.com/theinfluencerforum.com/wp-content/uploads/2023/04/lumen5.png?fit=692%2C449&ssl=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lumen5</h5>
+              <p class="card-text">AI-driven video creation platform for transforming text content into videos.</p>
+              <a href="https://lumen5.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 16 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.marketeroslatam.com/wp-content/uploads/2022/01/Chatfuel.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chatfuel</h5>
+              <p class="card-text">AI chatbot platform for automating customer interactions.</p>
+              <a href="https://chatfuel.com/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 17 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://cdn.prod.website-files.com/5fd3c52ce5bc147a1f007ca4/63af0a123ca698181e0179fc_og_lately_main.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lately</h5>
+              <p class="card-text">AI-driven social media management tool for customer engagement.</p>
+              <a href="https://www.lately.ai/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 18 -->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://contentladder.in/blog/wp-content/uploads/2023/08/Uizard-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Uizard</h5>
+              <p class="card-text">AI-powered design tool for creating user interfaces from sketches.</p>
+              <a href="https://uizard.io/" class="btn btn-primary">Visit Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
-  <!---Card 1-->
-  <div  class="card" style="width: 18rem;"> 
-    <img src="https://blog.routinehub.co/content/images/2023/02/openAI-chat-gpt-1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">ChatGPT</h5>
-      <p class="card-text">AI chatbot for generating human-like responses. </p>
-      <a href="https://www.jasper.ai/" class="btn btn-primary">Visit Now</a>
-    </div>
-  </div>
-  <!---Card 2-->
-  <div class="card" style="width: 18rem;">
-     
-    <img src="https://1000logos.net/wp-content/uploads/2022/12/HubSpot-Logo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Hubspot</h5>
-      <p class="card-text">AI-driven marketing and sales platform for business growth.
-      </p>
-      <a href="https://www.hubspot.com/
-      " class="btn btn-primary">Visit Now</a>
-    </div>
-    </div>
-    <!---Card 3-->
-      <div class="card" style="width: 18rem;"> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRjTJahdK4csBbd18k7cUdMwAK1t6F6qTxlw&s" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Jasper AI</h5>
-      <p class="card-text">AI-powered content generation for marketing copy.
-      </p>
-      <a href="https://www.jasper.ai/" class="btn btn-primary">Visit Now</a>
-    </div>
-  </div>
- 
-  <!---Card 4-->
-  <div class="card" style="width: 18rem;"> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8k64RPD_bkyBVASVZQZfVRn-NwBJHP5vSQ&s" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Synthesia </h5>
-      <p class="card-text">AI video generation platform for creating professional videos.</p>
-      <a href="https://www.synthesia.io/" class="btn btn-primary">Visit Now</a>
-    </div>
-  </div>
- <!---Card 5-->
+  <footer class="footer">Made with Love by Ayush Ranjan</footer>
 
-<div class="card" style="width: 18rem;"> 
-    <img src="https://static-web.grammarly.com/1e6ajr2k4140/59BCuroQxv6HsFY1t0LYx6/964f8dd29e89eb079a2737f7e7254c11/Frame_31613445.png?w=810" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Grammarly</h5>
-      <p class="card-text">AI-powered writing assistant for grammar and style enhancement.</p>
-      <a href="https://www.grammarly.com/" class="btn btn-primary">Visit Now</a>
-    </div>
-  </div>
-<!---Card 6-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPKQWnMrsImxX7945sbQSenays5V_MCe6Qw&s" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">GitHub Copilot</h5>
-    <p class="card-text">AI pair programmer that assists with code completion.</p>
-    <a href="https://github.com/features/copilot" class="btn btn-primary">Visit Now</a>
-  </div>
-</div>
-<!---Card 7-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://pbs.twimg.com/media/GFvOjq8W0AACVxI.jpg:large" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">DALL·E 3</h5>
-    <p class="card-text">AI system capable of generating realistic images from textual descriptions.</p>
-    <a href="https://openai.com/dall-e-3/" class="btn btn-primary">Visit Now</a>
-</div>
-</div>
-  <!---Card 8-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://i0.wp.com/dessign.net/wp-content/uploads/Meet-Magic-Studio-Canva-s-AI-Tools.png?resize=1024%2C593&ssl=1" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Canva Magic</h5>
-    <p class="card-text">AI-enhanced design tool for creating social media graphics.</p>
-    <a href="https://www.canva.com/" class="btn btn-primary">Visit Now</a>
-</div>
-</div>
-<!---Card 9-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://mms-app.s3.amazonaws.com/wordpress/2021/06/15120226/marketmuse-share.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">MarketMuse</h5>
-    <p class="card-text">AI-driven content research and optimization platform.</p>
-    <a href="https://www.marketmuse.com/" class="btn btn-primary">Visit Now</a>
-</div>
-</div>
-<!---Card 10-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://miro.medium.com/v2/resize:fit:1200/1*k6wECwaAc1vfOQtQak9vfQ.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Tabnine</h5>
-    <p class="card-text">AI code completion tool supporting multiple programming languages.</p>
-    <a href="https://www.tabnine.com/" class="btn btn-primary">Visit Now</a>
-</div>
-</div>
-<!---Card 11-->
- <div class="card" style="width: 18rem;"> 
-    <img src="https://external-preview.redd.it/first-ai-powered-robot-lawyer-will-represent-defendant-in-v0-beutsWz9TaGKo1KhqeEhKM6biTFMZZGpqIQR6W_N83s.jpg?auto=webp&s=b184208e41276297d2ff480351372b6215b38c5b" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Legal Robot</h5>
-      <p class="card-text">AI tool for analyzing and interpreting legal documents.</p>
-      <a href="https://www.legalrobot.com/" class="btn btn-primary">Visit Now</a>
-  </div>
-  </div>
-<!---Card12-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://analyticsdrift.com/wp-content/uploads/2020/11/Deepnote-1-1024x576.png" class="card-img-top" alt="...">
-  <div class="card-body">
-      <h5 class="card-title">Deepnote</h5>
-      <p class="card-text">Collaborative data science notebook with AI capabilities.</p>
-      <a href="https://deepnote.com/" class="btn btn-primary">Visit Now</a>
-  </div>
-  </div>
-<!---Card13-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://appsumo2-cdn.appsumo.com/media/deals/images/as-web-BrowseAI_FsfV03u.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Browse AI</h5>
-    <p class="card-text">AI tool for automating data extraction from websites.</p>
-    <a href="https://www.browse.ai/" class="btn btn-primary">Visit Now</a>
-</div>
-</div>
-<!---Card14-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://i.ytimg.com/vi/U46MqPLHv6g/maxresdefault.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Crayon</h5>
-    <p class="card-text">Competitive intelligence tool utilizing AI for market analysis.</p>
-    <a href="https://www.crayon.co/" class="btn btn-primary">Visit Now</a>
-</div>
-</div>
-<!---Card15-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://i0.wp.com/theinfluencerforum.com/wp-content/uploads/2023/04/lumen5.png?fit=692%2C449&ssl=1" class="card-img-top" alt="...">
-  <div class="card-body">
-      <h5 class="card-title">Lumen5</h5>
-      <p class="card-text">AI-driven video creation platform for transforming text content into videos.</p>
-      <a href="https://lumen5.com/" class="btn btn-primary">Visit Now</a>
-  </div>
-  </div>
-<!---Card16-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://www.marketeroslatam.com/wp-content/uploads/2022/01/Chatfuel.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Chatfuel</h5>
-      <p class="card-text">AI chatbot platform for automating customer interactions.</p>
-      <a href="https://chatfuel.com/" class="btn btn-primary">Visit Now</a>
-  </div>
-  </div>
-<!---Card17-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://cdn.prod.website-files.com/5fd3c52ce5bc147a1f007ca4/63af0a123ca698181e0179fc_og_lately_main.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Lately</h5>
-    <p class="card-text">AI-driven social media management tool for customer engagement.</p>
-    <a href="https://www.lately.ai/" class="btn btn-primary">Visit Now</a>
-</div>
-</div>
-<!---Card18-->
-<div class="card" style="width: 18rem;"> 
-  <img src="https://contentladder.in/blog/wp-content/uploads/2023/08/Uizard-2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Uizard</h5>
-    <p class="card-text">AI-powered design tool for creating user interfaces from sketches.</p>
-    <a href="https://uizard.io/" class="btn btn-primary">Visit Now</a>
-</div>
- </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-
-  <footer class="footer">
-    Made with Love by Ayush Ranjan
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
